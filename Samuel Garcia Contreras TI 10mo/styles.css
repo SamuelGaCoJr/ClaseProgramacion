@@ -1,0 +1,144 @@
+body
+{
+    position: absolute;
+    height: 200%;
+    left: 0%;
+    top: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.barra-navegacion
+{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 20%;
+    
+}
+.covid
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    background: black;
+}
+.announcement
+{
+    position: absolute;
+    left: 34.5%;
+    top: 30%;
+    width: 10%;
+    height: 45%;
+    background: rgb(255, 83, 83);
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+}
+.texto-covid
+{
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    font-size: 25px;
+    color: white;
+}
+.secciones
+{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    background: rgb(255, 83, 83);
+}
+.secciones img
+{
+    position: absolute;
+    top: 15%;
+    left: 9.5%;
+    width: 5%;
+    height: 80%;
+}
+.empresa
+{
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    color: white;
+    font-size: 20px
+}
+.carrito
+{
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    width: 4.5%;
+    height: 60%;
+    background: black;
+    border-radius: 10px
+}
+.bi-cart
+{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    color: white;
+}
+.noti
+{
+    position: absolute;
+    top: -10%;
+    left: 82%;
+    width: 20%;
+    height: 38%;
+    background: white;
+    border-radius: 60%
+}
+.home
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    font-size: 20px
+}
+.about
+{
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    color: white;
+    font-size: 20px
+}
+.shop
+{
+    position: absolute;
+    top: 40%;
+    left: 62%;
+    color: white;
+    font-size: 20px
+}
+.donate
+{
+    position: absolute;
+    top: 40%;
+    left: 68%;
+    color: white;
+    font-size: 20px
+}
+.contact
+{
+    position: absolute;
+    top: 40%;
+    left: 74%;
+    color: white;
+    font-size: 20px
+}
+.paisaje
+{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}

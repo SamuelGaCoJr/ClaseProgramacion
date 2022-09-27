@@ -1,0 +1,644 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --primary-color: #eb5757;
+    --secondary-color: #222;
+    --light-color: #f9f9f9;
+    --dark-color: #333;
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    background-color: var(--primary-color);
+    z-index: 10;
+}
+
+header .covid{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+
+header .covid button{
+    width: 140px;
+    height: 35px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+header .covid p{
+    font-size: 18px;
+}
+
+header .menu{
+    width: 100%;
+    height: 75px;
+    padding: 0 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-color);
+}
+
+header .menu div{
+    width:  600px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu div a{
+    height: 35px;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--light-color);
+    transition: all 0.5s ease;
+}
+
+header .menu div a:hover{
+    background-color: var(--dark-color);
+}
+
+header .menu div button{
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    background-size: 60%;
+    background-position: center;
+    border: none;
+    background-image: url("./img/carrito.svg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header .menu div button span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding-top: 2px;
+    text-align: center;
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    display: inline-block;
+    background-color: var(--light-color);
+}
+
+main{
+    padding-top: 150px;
+    margin: 0;
+    z-index: 2;
+    width: 100vw;
+}
+
+
+main .fondo1{
+    width: 100vw;
+    height: 58vh;
+    position: absolute;
+    background-size: 100%;
+    background-position: center;
+    border: none;
+    background-image: url("./img/fondo1.jpg");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+main .fondo1 h1{
+    width: 25%;
+    position: relative;
+    left: 20%;
+    top: 25%;
+    color: var(--light-color);
+    font-size: 60px;
+}
+
+main .fondo1 p{
+    width: 25%;
+    position: relative;
+    left: 20%;
+    top: 28%;
+    color: var(--light-color);
+    font-size: 20px;
+}
+
+main .fondo1 button{
+    background-color: rgba(0 ,0 ,0, 0);
+    color: var(--light-color);
+    width: 7%;
+    height: 7%;
+    border-radius: 5px;
+    border-color: var(--light-color);
+    border-style: solid;
+    position: relative;
+    top: 33%;
+    left: 20%;
+    transition: all 0.3s ease;
+}
+
+main .fondo1 button:hover{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    width: 7%;
+    height: 7%;
+    border-radius: 5px;
+    border-color: var(--light-color);
+    border-style: solid;
+    position: relative;
+    top: 33%;
+    left: 20%;
+}
+
+
+main .cuadros{
+    position: absolute;
+    top: 85%;
+    left: 0%;
+    width: 100vw;
+    height: 80%;
+    border: none;
+}
+
+main .cuadros .texto1{
+    width: 60vw;
+    height: 12%;
+    position: relative;
+    left: 20%;
+    align-content: center;
+}
+
+main .cuadros .texto1 .subtitulo1{
+    font-size: 40px;
+}
+
+main .cuadros .texto1 .texto2{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: -50%;
+}
+
+
+main .cuadros .cuadros2{
+    width: 60%;
+    height: 70%;
+    left: 20%;
+    top: 15%;
+    position: absolute;
+}
+
+
+main .cuadros .cuadros2 .cuadro1{
+    width: 31%;
+    height: 90%;
+    position: relative;
+    font-size: 15px;
+}
+
+main .cuadros .cuadros2 p{
+    position: relative;
+    top: 5%;
+}
+
+main .cuadros .cuadros2 .contenido1{
+    width: 100%;
+    height: 75%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--light-color);
+}
+
+main .cuadros .cuadros2 .contenido1 span{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: xx-large;
+}
+
+main .cuadros .cuadros2 .contenido1 h3{
+    position: absolute;
+    top: 25%;
+    font-size: 40px;
+    text-align: center;    
+}
+
+
+main .cuadros .cuadros2 .cuadro2{
+    width: 31%;
+    height: 90%;
+    position: relative;
+    font-size: 15px;
+    left: 34.66%;
+    top: -90%;
+}
+
+main .cuadros .cuadros2 p{
+    position: relative;
+    top: 5%;
+}
+
+main .cuadros .cuadros2 .contenido2{
+    width: 100%;
+    height: 75%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--light-color);
+}
+
+main .cuadros .cuadros2 .contenido2 span{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: xx-large;
+}
+
+main .cuadros .cuadros2 .contenido2 h3{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-size: 40px;
+    text-align: center;    
+}
+
+
+main .cuadros .cuadros2 .cuadro3{
+    width: 31%;
+    height: 90%;
+    position: relative;
+    font-size: 15px;
+    left: 69.66%;
+    top: -180%;
+}
+
+main .cuadros .cuadros2 p{
+    position: relative;
+    top: 5%;
+}
+
+main .cuadros .cuadros2 .contenido3{
+    width: 100%;
+    height: 75%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--light-color);
+}
+
+main .cuadros .cuadros2 .contenido3 span{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: xx-large;
+}
+
+main .cuadros .cuadros2 .contenido3 h3{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 40px;
+    text-align: center;    
+}
+
+
+main .fondo2{
+    width: 100vw;
+    height: 58vh;
+    position: absolute;
+    top: 155%;
+    background-size: 100%;
+    background-position: center;
+    border: none;
+    background-image: url("./img/fondo2.jpg");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+main .fondo2 h2{
+    width: 30%;
+    position: relative;
+    left: 50%;
+    top: 25%;
+    color: var(--light-color);
+    font-size: 46px;
+    text-align: end;
+
+}
+
+main .fondo2 p{
+    width: 25%;
+    position: relative;
+    left: 55%;
+    top: 28%;
+    color: var(--light-color);
+    font-size: 20px;
+    text-align: end;
+
+}
+
+main .fondo2 button{
+    color: var(--secondary-color);
+    width: 12%;
+    height: 7%;
+    border-radius: 5px;
+    border-color: var(--light-color);
+    background-color: var(--light-color);    
+    border-style: solid;
+    position: relative;
+    top: 33%;
+    left: 68%;
+    transition: all 0.3s ease;
+
+}
+
+main .fondo2 button:hover{
+    color: var(--light-color);
+    width: 12%;
+    height: 7%;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);    
+    border-style: solid;
+    position: relative;
+    top: 33%;
+    left: 68%;
+}
+
+
+main .productos{
+    position: absolute;
+    top: 220%;
+    left: 20%;
+    width: 60vw;
+    height: 85%;
+    border: none;
+}
+
+main .productos .horario{
+    font-size: 40px;
+}
+
+main .productos .productoscuadros{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 85%;
+}
+
+main .productos .productoscuadros button{
+    color: var(--light-color);
+    width: 25%;
+    height: 6%;
+    border-radius: 5px;
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+    border-style: solid;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+main .productos .productoscuadros button:hover{
+    color: var(--light-color);
+    width: 25%;
+    height: 6%;
+    border-radius: 5px;
+    background-color: var(--dark-color); 
+    border-color: var(--dark-color);
+    border-style: solid;
+    position: relative;
+}
+
+main .productos .productoscuadros h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main .productos .productoscuadros .producto1{
+    width: 32.5%;
+    height: 100%;
+    text-align: center;
+}
+
+main .productos .productoscuadros .imgproducto1{
+    width: 100%;
+    height: 85%;
+    background-image: url("./img/producto1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 210%;
+    display: block;
+}
+
+
+main .productos .productoscuadros .producto2{
+    width: 32.5%;
+    height: 100%;
+    position: absolute;
+    left: 34%;
+    top: 0%;
+    text-align: center;
+}
+
+main .productos .productoscuadros .imgproducto2{
+    width: 100%;
+    height: 85%;
+    background-image: url("./img/producto2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250%;
+    display: block;
+}
+
+
+main .productos .productoscuadros .producto3{
+    width: 32.5%;
+    height: 100%;
+    position: absolute;
+    left: 68%;
+    top: 0%;
+    text-align: center;
+}
+
+main .productos .productoscuadros .producto3 .descuento{
+    color: var(--primary-color);
+    text-decoration: line-through;
+}
+
+main .productos .productoscuadros .imgproducto3{
+    width: 100%;
+    height: 85%;
+    background-image: url("./img/producto3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 210%;
+    display: block;
+}
+
+main .productos .productoscuadros .oferta{
+    top: 5%;
+    left: 30%;
+}
+
+main .productos .vertodo{
+    position: absolute;
+    top: 104%;
+    left: 42.5%;
+    width: 15%;
+    height: 5%;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+main .productos .vertodo:hover{
+    position: absolute;
+    top: 104%;
+    left: 42.5%;
+    width: 15%;
+    height: 5%;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 7px;
+}
+
+
+main .info{
+    position: absolute;
+    top: 330%;
+    width: 100%;
+    height: 90%;
+}
+
+main .info .mujer{
+    position: absolute;
+    top: 4%;
+    left: 20%;
+    width: 19%;
+    height: 55%;
+    background-image: url("./img/mujer.jpg");
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 70% 90%;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+main .info .cuadroinfo{
+    width: 50%;
+    height: 68%;
+    position: absolute;
+    top: 0%;
+    left: 32%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--light-color)
+}
+
+main .info .cuadroinfo h2{
+    font-size: 40px;
+    position: relative;
+    top: 9%;
+    left: 40%;
+}
+
+main .info .cuadroinfo p{
+    font-size: 17px;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    width: 46%;
+    height: 70%;
+}
+
+
+footer{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 405%;
+    color: var(--light-color);
+}
+
+footer .iconos{
+    position: relative;
+    top: 40%;
+    height: 35px;
+    width: 60%;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .iconos span{
+    position: absolute;
+    left: 30%;
+}
+
+footer p{
+    position: relative;
+    top: 70%;
+    text-align: center;
+}
+
+footer p a{
+    color: var(--primary-color);
+}
+
+footer .iconos .logos .twitter{
+    position: absolute;
+    top: 10%;
+    left: 120%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+}
+
+footer .iconos .logos .facebook{
+    position: absolute;
+    top: 10%;
+    left: 125%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+}
+
+footer .iconos .logos .instagram{
+    position: absolute;
+    top: 10%;
+    left: 130%;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
