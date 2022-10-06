@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,18 +6,18 @@
     letter-spacing: 1.2px;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-:root{
+:root {
     --primary-color: #eb5757;
     --secondary-color: #222;
     --light-color: #f9f9f9;
     --dark-color: #333;
 }
 
-header{
+header {
     width: 100vw;
     height: 150px;
     position: fixed;
@@ -25,7 +25,7 @@ header{
     z-index: 10;
 }
 
-header .covid{
+header .covid {
     width: 100%;
     height: 75px;
     display: flex;
@@ -36,7 +36,7 @@ header .covid{
     background-color: var(--secondary-color);
 }
 
-header .covid button{
+header .covid button {
     width: 140px;
     height: 35px;
     border-radius: 18px;
@@ -45,29 +45,29 @@ header .covid button{
     color: var(--light-color);
 }
 
-header .covid p{
+header .covid p {
     font-size: 18px;
 }
 
-header .menu{
-    width: 100%;
+header .menu {
+    width: 100vw;
     height: 75px;
-    padding: 0 360px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     color: var(--light-color);
 }
 
-header .menu div{
-    width:  600px;
+header .menu div {
+    width: 400px;
     height: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .menu div a{
+header .menu div a {
     height: 35px;
     width: 70px;
     text-align: center;
@@ -79,11 +79,11 @@ header .menu div a{
     transition: all 0.5s ease;
 }
 
-header .menu div a:hover{
+header .menu div a:hover {
     background-color: var(--dark-color);
 }
 
-header .menu div button{
+header .menu div button {
     width: 45px;
     height: 35px;
     border-radius: 5px;
@@ -96,7 +96,7 @@ header .menu div button{
     position: relative;
 }
 
-header .menu div button span{
+header .menu div button span {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -109,48 +109,51 @@ header .menu div button span{
     background-color: var(--light-color);
 }
 
-main{
+main {
+    display: flex;
     padding-top: 150px;
     margin: 0;
     z-index: 2;
     width: 100vw;
 }
 
-
-main .fondo1{
+main .fondo1 {
     width: 100vw;
     height: 58vh;
-    position: absolute;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     border: none;
     background-image: url("./img/fondo1.jpg");
     background-repeat: no-repeat;
-    display: block;
+    flex-wrap: wrap;
+    font-size: 20px;
 }
 
-main .fondo1 h1{
+main .fondo1 h1 {
     width: 25%;
     position: relative;
     left: 20%;
     top: 25%;
     color: var(--light-color);
-    font-size: 60px;
+    font-size: 4vh;
 }
 
-main .fondo1 p{
-    width: 25%;
+main .fondo1 p {
+    width: 40%;
     position: relative;
     left: 20%;
     top: 28%;
     color: var(--light-color);
     font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-main .fondo1 button{
-    background-color: rgba(0 ,0 ,0, 0);
+main .fondo1 button {
+    background-color: rgba(0, 0, 0, 0);
     color: var(--light-color);
-    width: 7%;
+    width: 110px;
     height: 7%;
     border-radius: 5px;
     border-color: var(--light-color);
@@ -161,10 +164,10 @@ main .fondo1 button{
     transition: all 0.3s ease;
 }
 
-main .fondo1 button:hover{
+main .fondo1 button:hover {
     background-color: var(--light-color);
     color: var(--dark-color);
-    width: 7%;
+    width: 110px;
     height: 7%;
     border-radius: 5px;
     border-color: var(--light-color);
@@ -174,8 +177,7 @@ main .fondo1 button:hover{
     left: 20%;
 }
 
-
-main .cuadros{
+main .cuadros {
     position: absolute;
     top: 85%;
     left: 0%;
@@ -184,7 +186,7 @@ main .cuadros{
     border: none;
 }
 
-main .cuadros .texto1{
+main .cuadros .texto1 {
     width: 60vw;
     height: 12%;
     position: relative;
@@ -192,19 +194,18 @@ main .cuadros .texto1{
     align-content: center;
 }
 
-main .cuadros .texto1 .subtitulo1{
+main .cuadros .texto1 .subtitulo1 {
     font-size: 40px;
 }
 
-main .cuadros .texto1 .texto2{
+main .cuadros .texto1 .texto2 {
     width: 50%;
     position: relative;
     left: 50%;
     top: -50%;
 }
 
-
-main .cuadros .cuadros2{
+main .cuadros .cuadros2 {
     width: 60%;
     height: 70%;
     left: 20%;
@@ -212,20 +213,19 @@ main .cuadros .cuadros2{
     position: absolute;
 }
 
-
-main .cuadros .cuadros2 .cuadro1{
+main .cuadros .cuadros2 .cuadro1 {
     width: 31%;
     height: 90%;
     position: relative;
     font-size: 15px;
 }
 
-main .cuadros .cuadros2 p{
+main .cuadros .cuadros2 p {
     position: relative;
     top: 5%;
 }
 
-main .cuadros .cuadros2 .contenido1{
+main .cuadros .cuadros2 .contenido1 {
     width: 100%;
     height: 75%;
     background-color: var(--secondary-color);
@@ -233,22 +233,21 @@ main .cuadros .cuadros2 .contenido1{
     color: var(--light-color);
 }
 
-main .cuadros .cuadros2 .contenido1 span{
+main .cuadros .cuadros2 .contenido1 span {
     position: absolute;
     top: 15%;
     left: 10%;
     font-size: xx-large;
 }
 
-main .cuadros .cuadros2 .contenido1 h3{
+main .cuadros .cuadros2 .contenido1 h3 {
     position: absolute;
     top: 25%;
     font-size: 40px;
-    text-align: center;    
+    text-align: center;
 }
 
-
-main .cuadros .cuadros2 .cuadro2{
+main .cuadros .cuadros2 .cuadro2 {
     width: 31%;
     height: 90%;
     position: relative;
@@ -257,12 +256,12 @@ main .cuadros .cuadros2 .cuadro2{
     top: -90%;
 }
 
-main .cuadros .cuadros2 p{
+main .cuadros .cuadros2 p {
     position: relative;
     top: 5%;
 }
 
-main .cuadros .cuadros2 .contenido2{
+main .cuadros .cuadros2 .contenido2 {
     width: 100%;
     height: 75%;
     background-color: var(--secondary-color);
@@ -270,23 +269,22 @@ main .cuadros .cuadros2 .contenido2{
     color: var(--light-color);
 }
 
-main .cuadros .cuadros2 .contenido2 span{
+main .cuadros .cuadros2 .contenido2 span {
     position: absolute;
     top: 15%;
     left: 10%;
     font-size: xx-large;
 }
 
-main .cuadros .cuadros2 .contenido2 h3{
+main .cuadros .cuadros2 .contenido2 h3 {
     position: absolute;
     top: 35%;
     left: 25%;
     font-size: 40px;
-    text-align: center;    
+    text-align: center;
 }
 
-
-main .cuadros .cuadros2 .cuadro3{
+main .cuadros .cuadros2 .cuadro3 {
     width: 31%;
     height: 90%;
     position: relative;
@@ -295,12 +293,12 @@ main .cuadros .cuadros2 .cuadro3{
     top: -180%;
 }
 
-main .cuadros .cuadros2 p{
+main .cuadros .cuadros2 p {
     position: relative;
     top: 5%;
 }
 
-main .cuadros .cuadros2 .contenido3{
+main .cuadros .cuadros2 .contenido3 {
     width: 100%;
     height: 75%;
     background-color: var(--secondary-color);
@@ -308,23 +306,22 @@ main .cuadros .cuadros2 .contenido3{
     color: var(--light-color);
 }
 
-main .cuadros .cuadros2 .contenido3 span{
+main .cuadros .cuadros2 .contenido3 span {
     position: absolute;
     top: 15%;
     left: 10%;
     font-size: xx-large;
 }
 
-main .cuadros .cuadros2 .contenido3 h3{
+main .cuadros .cuadros2 .contenido3 h3 {
     position: absolute;
     top: 25%;
     left: 15%;
     font-size: 40px;
-    text-align: center;    
+    text-align: center;
 }
 
-
-main .fondo2{
+main .fondo2 {
     width: 100vw;
     height: 58vh;
     position: absolute;
@@ -337,7 +334,7 @@ main .fondo2{
     display: block;
 }
 
-main .fondo2 h2{
+main .fondo2 h2 {
     width: 30%;
     position: relative;
     left: 50%;
@@ -345,10 +342,9 @@ main .fondo2 h2{
     color: var(--light-color);
     font-size: 46px;
     text-align: end;
-
 }
 
-main .fondo2 p{
+main .fondo2 p {
     width: 25%;
     position: relative;
     left: 55%;
@@ -356,39 +352,36 @@ main .fondo2 p{
     color: var(--light-color);
     font-size: 20px;
     text-align: end;
-
 }
 
-main .fondo2 button{
+main .fondo2 button {
     color: var(--secondary-color);
     width: 12%;
     height: 7%;
     border-radius: 5px;
     border-color: var(--light-color);
-    background-color: var(--light-color);    
+    background-color: var(--light-color);
     border-style: solid;
     position: relative;
     top: 33%;
     left: 68%;
     transition: all 0.3s ease;
-
 }
 
-main .fondo2 button:hover{
+main .fondo2 button:hover {
     color: var(--light-color);
     width: 12%;
     height: 7%;
     border-radius: 5px;
     border-color: var(--primary-color);
-    background-color: var(--primary-color);    
+    background-color: var(--primary-color);
     border-style: solid;
     position: relative;
     top: 33%;
     left: 68%;
 }
 
-
-main .productos{
+main .productos {
     position: absolute;
     top: 220%;
     left: 20%;
@@ -397,51 +390,51 @@ main .productos{
     border: none;
 }
 
-main .productos .horario{
+main .productos .horario {
     font-size: 40px;
 }
 
-main .productos .productoscuadros{
+main .productos .productoscuadros {
     position: absolute;
     top: 10%;
     width: 100%;
     height: 85%;
 }
 
-main .productos .productoscuadros button{
+main .productos .productoscuadros button {
     color: var(--light-color);
     width: 25%;
     height: 6%;
     border-radius: 5px;
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
     border-color: var(--primary-color);
     border-style: solid;
     position: relative;
     transition: all 0.3s ease;
 }
 
-main .productos .productoscuadros button:hover{
+main .productos .productoscuadros button:hover {
     color: var(--light-color);
     width: 25%;
     height: 6%;
     border-radius: 5px;
-    background-color: var(--dark-color); 
+    background-color: var(--dark-color);
     border-color: var(--dark-color);
     border-style: solid;
     position: relative;
 }
 
-main .productos .productoscuadros h4{
+main .productos .productoscuadros h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-main .productos .productoscuadros .producto1{
+main .productos .productoscuadros .producto1 {
     width: 32.5%;
     height: 100%;
     text-align: center;
 }
 
-main .productos .productoscuadros .imgproducto1{
+main .productos .productoscuadros .imgproducto1 {
     width: 100%;
     height: 85%;
     background-image: url("./img/producto1.jpg");
@@ -451,8 +444,7 @@ main .productos .productoscuadros .imgproducto1{
     display: block;
 }
 
-
-main .productos .productoscuadros .producto2{
+main .productos .productoscuadros .producto2 {
     width: 32.5%;
     height: 100%;
     position: absolute;
@@ -461,7 +453,7 @@ main .productos .productoscuadros .producto2{
     text-align: center;
 }
 
-main .productos .productoscuadros .imgproducto2{
+main .productos .productoscuadros .imgproducto2 {
     width: 100%;
     height: 85%;
     background-image: url("./img/producto2.jpg");
@@ -471,8 +463,7 @@ main .productos .productoscuadros .imgproducto2{
     display: block;
 }
 
-
-main .productos .productoscuadros .producto3{
+main .productos .productoscuadros .producto3 {
     width: 32.5%;
     height: 100%;
     position: absolute;
@@ -481,12 +472,12 @@ main .productos .productoscuadros .producto3{
     text-align: center;
 }
 
-main .productos .productoscuadros .producto3 .descuento{
+main .productos .productoscuadros .producto3 .descuento {
     color: var(--primary-color);
     text-decoration: line-through;
 }
 
-main .productos .productoscuadros .imgproducto3{
+main .productos .productoscuadros .imgproducto3 {
     width: 100%;
     height: 85%;
     background-image: url("./img/producto3.jpg");
@@ -496,12 +487,12 @@ main .productos .productoscuadros .imgproducto3{
     display: block;
 }
 
-main .productos .productoscuadros .oferta{
+main .productos .productoscuadros .oferta {
     top: 5%;
     left: 30%;
 }
 
-main .productos .vertodo{
+main .productos .vertodo {
     position: absolute;
     top: 104%;
     left: 42.5%;
@@ -514,7 +505,7 @@ main .productos .vertodo{
     transition: all 0.3s ease;
 }
 
-main .productos .vertodo:hover{
+main .productos .vertodo:hover {
     position: absolute;
     top: 104%;
     left: 42.5%;
@@ -526,15 +517,14 @@ main .productos .vertodo:hover{
     border-radius: 7px;
 }
 
-
-main .info{
+main .info {
     position: absolute;
     top: 330%;
     width: 100%;
     height: 90%;
 }
 
-main .info .mujer{
+main .info .mujer {
     position: absolute;
     top: 4%;
     left: 20%;
@@ -548,7 +538,7 @@ main .info .mujer{
     z-index: 3;
 }
 
-main .info .cuadroinfo{
+main .info .cuadroinfo {
     width: 50%;
     height: 68%;
     position: absolute;
@@ -559,14 +549,14 @@ main .info .cuadroinfo{
     color: var(--light-color)
 }
 
-main .info .cuadroinfo h2{
+main .info .cuadroinfo h2 {
     font-size: 40px;
     position: relative;
     top: 9%;
     left: 40%;
 }
 
-main .info .cuadroinfo p{
+main .info .cuadroinfo p {
     font-size: 17px;
     position: relative;
     top: 10%;
@@ -575,8 +565,7 @@ main .info .cuadroinfo p{
     height: 70%;
 }
 
-
-footer{
+footer {
     background-color: var(--secondary-color);
     width: 100%;
     height: 200px;
@@ -585,7 +574,7 @@ footer{
     color: var(--light-color);
 }
 
-footer .iconos{
+footer .iconos {
     position: relative;
     top: 40%;
     height: 35px;
@@ -599,22 +588,22 @@ footer .iconos{
     align-items: center;
 }
 
-footer .iconos span{
+footer .iconos span {
     position: absolute;
     left: 30%;
 }
 
-footer p{
+footer p {
     position: relative;
     top: 70%;
     text-align: center;
 }
 
-footer p a{
+footer p a {
     color: var(--primary-color);
 }
 
-footer .iconos .logos .twitter{
+footer .iconos .logos .twitter {
     position: absolute;
     top: 10%;
     left: 120%;
@@ -624,7 +613,7 @@ footer .iconos .logos .twitter{
     border-radius: 5px;
 }
 
-footer .iconos .logos .facebook{
+footer .iconos .logos .facebook {
     position: absolute;
     top: 10%;
     left: 125%;
@@ -634,7 +623,7 @@ footer .iconos .logos .facebook{
     border-radius: 5px;
 }
 
-footer .iconos .logos .instagram{
+footer .iconos .logos .instagram {
     position: absolute;
     top: 10%;
     left: 130%;
@@ -642,5 +631,6 @@ footer .iconos .logos .instagram{
     height: 40px;
     border-radius: 10px;
 }
+
 
 /* Comentarios nomas xD */
